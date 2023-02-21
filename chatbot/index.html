@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/compiled-4.20.0.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#141852">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#141852">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#141852">
+
+  <!-- tab info -->
+  <title>BAT</title>
+  <meta name="title" content="BAT (beta)">
+  <link rel="icon"
+    href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a5e8f936-b857-4668-9856-65c232e22472/d63tx08-6616fffc-c54e-423b-a645-34098fb555af.png/v1/fill/w_256,h_256,q_80,strp/adventure_time__bmo_icon_by_bullfrog77_d63tx08-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjU2IiwicGF0aCI6IlwvZlwvYTVlOGY5MzYtYjg1Ny00NjY4LTk4NTYtNjVjMjMyZTIyNDcyXC9kNjN0eDA4LTY2MTZmZmZjLWM1NGUtNDIzYi1hNjQ1LTM0MDk4ZmI1NTVhZi5wbmciLCJ3aWR0aCI6Ijw9MjU2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.hpuvsSf1lybI2Srgv9GWzrAP__YR03n8fpTB0P466_Q">
+  <meta name="description"
+    content="BAT (BMO Assistant Transformer) is a chatbot that powered by OpenAI. You can ask BAT anything, start a conversation, and so on.">
+
+  <!--open graph-->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dendakoduong.github.io/">
+  <meta property="og:title" content="BAT (beta)">
+  <meta property="og:description"
+    content="BAT (BMO Assistant Transformer) is a chatbot that using OpenAI API. You can ask the AI questions, start a conversation with it, use it to write short stories, and more.">
+  <meta property="og:image" content="https://cdn.luatminhkhue.vn/lmk/article/Roll-Safe-meme.jpg">
+
+
+  <!-- font cdn and css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+  <style>
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .form-check-label {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-check-input:checked+.form-check-label .fa-moon {
+      display: none;
+    }
+
+    .form-check-input:not(:checked)+.form-check-label .fa-sun {
+      display: none;
+    }
+
+    .form-switch {
+      float: left;
+    }
+  </style>
+  <!--navbar start-->
+  <nav class="navbar navbar-expand-md navbar-light amber lighten-4 mb-4">
+
+    <!-- Navbar brand with logo -->
+    <a class="navbar-brand" href="#">
+      <img src="./icons/homeimg.png" alt="Logo" height="30"> BAT
+    </a>
+
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler toggler-example collapsed" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent7" aria-controls="navbarSupportedContent7" aria-expanded="false"
+      aria-label="Toggle navigation"><span class="dark-amber-text"><i class="fas fa-bars fa-1x"></i></span></button>
+
+    <!-- Collapsible content -->
+    <div class="navbar-collapse collapse" id="navbarSupportedContent7" style="">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light" href="https://forms.gle/VXrcwUQVPmWfJko39">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light" href="https://telegra.ph/Terms-and-Privacy-02-21">Terms &
+            Privacy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light" href="./about.html">About<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="dark-mode-switch">
+            <label class="form-check-label" for="dark-mode-switch">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+            </label>
+          </div>
+        </li>
+      </ul>
+      <!-- Links -->
+
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <!--navbar end-->
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 col-sm-12">
+        <div id="chat-window">
+          <div class="main-title">Chat</div>
+
+          <!-- Toggle checkbox with Sun and Moon Icon 
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="dark-mode-switch">
+            <label class="form-check-label" for="dark-mode-switch">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+            </label>
+          </div>-->
+
+
+
+
+          <div id="chat-messages"></div>
+
+
+          <!--loader-->
+          <div id="loader">
+            <div class="loader-icon">
+              <i class="fas fa-spinner fa-spin"></i>
+            </div>
+          </div>
+          <!--end-->
+          <form id="chat-form">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="chat-input" autocomplete="off" placeholder="Message..."
+                required />
+              <div class="input-group-append">
+                <button class="btn btn-white" type="submit"><i class="fa fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>❤️ Made with love. Powered by OpenAI. <br /><small>v 0.1.1 (beta)</small></p>
+          <a href="https://github.com/dendakoduong">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

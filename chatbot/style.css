@@ -1,0 +1,132 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f7efe5;
+}
+
+#chat-window {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #5896eb;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+#chat-messages {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  height: calc(100vh - 200px);
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+}
+
+#chat-form {
+  display: flex;
+  align-items: center;
+}
+
+#chat-input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #f7efe5;
+  color: #229ed9;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.bot-message {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff; /* white color for bot's message */
+  text-align: left;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  /*align-items: center; */
+  /*font-style: italic; */
+  color: #333; /* dark text color for bot's message */
+}
+
+.user-message {
+  font-family: "Nunito", sans-serif;
+  background-color: #007bff; /* blue color for sender's message */
+  color: #fff; /* white text color for sender's message */
+  text-align: left;
+  padding: 15px;
+  display: flex;
+  /*align-items: center;
+  font-style: italic; */
+}
+.user-message img,
+.bot-message img {
+  width: 40px; /* adjust the width of the icon */
+  height: 40px; /* adjust the height of the icon */
+  margin-right: 20px; /* add some margin to separate the icon from the message */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+  #chat-window {
+    width: 95%; /* 90*/
+  }
+}
+.main-title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 0.5rem;
+  color: #fffbf5;
+  font-style: bold;
+}
+
+#loader {
+  display: none;
+}
+
+.loader-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.loader-icon i {
+  font-size: 2rem;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*hamburger css color */
+.fa-1x {
+  font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+.dark-blue-text {
+  color: #0a38f5;
+}
+.dark-pink-text {
+  color: #ac003a;
+}
+.dark-amber-text {
+  color: #ff6f00;
+}
+.dark-teal-text {
+  color: #004d40;
+}
