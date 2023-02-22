@@ -9,15 +9,32 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="icon" href="https://m.media-amazon.com/images/I/61LI3H7YMtL.jpg">
   <style>
     /* add custom CSS styles here */
+    body {
+      background-color: #FF8E9E;
+    }
+
+    /* .container {
+      background-color: #ffecb3;
+    } */
+
+    /* custom CSS styles */
+    .bg-navbar {
+      background-color: #FF597B;
+    }
+
+    .bg-footer {
+      background-color: #F9B5D0;
+    }
   </style>
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="./index.html">BMO</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+    <a class="navbar-brand" href="./about.html">About BAT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -33,6 +50,9 @@
         <li class="nav-item">
           <a class="nav-link" href="https://telegra.ph/Terms-and-Privacy-02-21">Terms & Privacy</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://openai.com/api/">API</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -43,25 +63,40 @@
     <hr>
     <div class="row">
       <div class="col-md-6">
-        <img src="./aboutpic.png" class="img-fluid" alt="Random pic">
+        <img src="./aboutimg.png" class="img-fluid" alt="Random pic">
       </div>
       <div class="col-md-6">
         <h2>What is BMO?</h2>
-        <p>BAT (BMO Assistant Transformer) is a chatbot that using OpenAI API. You can ask the AI questions, start a
-          conversation with it, use it to write short stories, and more.</p>
+        <p>BMO is Finn and Jake's living video game console system, portable electrical outlet, computer, and friend.
+          BMO is characterized as a loyal, trusting and helpful robot who is protective of Finn and Jake.
+          <br />
+          BMO looks like a Macintosh computer with Game Boy Color buttons and Atari 2600 controllers. He also shares
+          some traits with a Vectrex.
+          <br />
+          BMO is a medium-sized teal/blue-green gaming device, sometimes appearing with one or two controllers attached
+          to them. When not being played, they have an 8-bit face.
+        </p>
+        <h2>What is BAT?</h2>
+        <p>BAT (BMO Assistant Transformer) is a chatbot same name with BMO, using OpenAI API. You can ask BAT questions,
+          start a
+          conversation, use it to write short stories, and more.</p>
         <h2>Released Note</h2>
         <ul>
           <li>v0.1.0 (beta): Project release</li>
           <li>v0.1.1 (beta): Improve UX/UI, Add navbar, Add footer, Max tokens for the respond up to 1000.</li>
         </ul>
+        <small>This is an open source project. You can get the source code <a
+            href="https://github.com/Dendakoduong/chatbot-openai-api">here.</a><br /> Don't forget to give me a star
+          :)</small>
       </div>
     </div>
   </div>
 
   <!-- footer -->
-  <footer class="bg-light text-center py-2 mt-4">
+  <footer class="bg-footer text-center py-2 mt-4">
     &copy; 2023 BAT. Powered by OpenAI.
   </footer>
+
 </body>
 
 </html>
